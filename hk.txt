@@ -19,6 +19,7 @@ CCTV16,P2p://generationnexxxt.com:19806/3bb4c4f6ec8d45db81ede1415820dba0
 CCTV17,P2p://generationnexxxt.com:19806/d155cd0903944373a0c13e8164532313
 CCTV1,P2p://generationnexxxt.com:19806/01803b4a49244bbeb8ae6a184892e94c
 
+
 卫视,#genre#
 北京卫视,P2p://generationnexxxt.com:19806/d2ea1b4a7c74410b8de4136e30ae7b2d
 天津卫视,P2p://generationnexxxt.com:19806/818900f94ecf40fda9d1282dd0b33441
