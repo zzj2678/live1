@@ -1,23 +1,23 @@
 中央,#genre#
-CCTV1,P2p://generationnexxxt.com:19806/cff3529e8cf64e3195f997c50b5052e6
-CCTV2,P2p://generationnexxxt.com:19806/db4a43b89aa1499d805620313fef2e71
-CCTV3,P2p://generationnexxxt.com:19806/e8a953ef11004ab2abd43ddb5d63d1f6
-CCTV4,P2p://generationnexxxt.com:19806/b76db7e51c6c481e812ff0a137cdbea4
-CCTV5,P2p://generationnexxxt.com:19806/38c87f18f93c440594b45fd7de89a768
-CCTV5+,P2p://generationnexxxt.com:19806/7ed1624a62004620bfecc83fe0b70935
-CCTV6,P2p://generationnexxxt.com:19806/bcd8bbb9c46540a98045c37dce48b29a
-CCTV7,P2p://generationnexxxt.com:19806/677201cbfea64afe9b67d634efc72def
-CCTV8,P2p://generationnexxxt.com:19806/2ef18f81383a43d9a3148599842d6ea9
-CCTV9,P2p://generationnexxxt.com:19806/b36c45df61324a349d67ee7408601031
-CCTV10,P2p://generationnexxxt.com:19806/d57481ce990f40b1afe524a7a81a610b
-CCTV11,P2p://generationnexxxt.com:19806/56da32afe6014171aa04ca3b935c4401
-CCTV12,P2p://generationnexxxt.com:19806/a0785ee578944dfeb5f151b7cb19b9fa
-CCTV13,P2p://generationnexxxt.com:19806/03b4efeb3d8a4a45b3ebe9aee326f7c7
-CCTV14,P2p://generationnexxxt.com:19806/0170decf55974c7ca5439f8ae263aab4
-CCTV15,P2p://generationnexxxt.com:19806/7e9868749080472c8e75bbec62dc630f
-CCTV16,P2p://generationnexxxt.com:19806/3bb4c4f6ec8d45db81ede1415820dba0
-CCTV17,P2p://generationnexxxt.com:19806/d155cd0903944373a0c13e8164532313
-CCTV1,P2p://generationnexxxt.com:19806/01803b4a49244bbeb8ae6a184892e94c
+CCTV-1,P2p://generationnexxxt.com:19806/cff3529e8cf64e3195f997c50b5052e6
+CCTV-2,P2p://generationnexxxt.com:19806/db4a43b89aa1499d805620313fef2e71
+CCTV-3,P2p://generationnexxxt.com:19806/e8a953ef11004ab2abd43ddb5d63d1f6
+CCTV-4,P2p://generationnexxxt.com:19806/b76db7e51c6c481e812ff0a137cdbea4
+CCTV-5,P2p://generationnexxxt.com:19806/38c87f18f93c440594b45fd7de89a768
+CCTV-5+,P2p://generationnexxxt.com:19806/7ed1624a62004620bfecc83fe0b70935
+CCTV-6,P2p://generationnexxxt.com:19806/bcd8bbb9c46540a98045c37dce48b29a
+CCTV-7,P2p://generationnexxxt.com:19806/677201cbfea64afe9b67d634efc72def
+CCTV-8,P2p://generationnexxxt.com:19806/2ef18f81383a43d9a3148599842d6ea9
+CCTV-9,P2p://generationnexxxt.com:19806/b36c45df61324a349d67ee7408601031
+CCTV-10,P2p://generationnexxxt.com:19806/d57481ce990f40b1afe524a7a81a610b
+CCTV-11,P2p://generationnexxxt.com:19806/56da32afe6014171aa04ca3b935c4401
+CCTV-12,P2p://generationnexxxt.com:19806/a0785ee578944dfeb5f151b7cb19b9fa
+CCTV-13,P2p://generationnexxxt.com:19806/03b4efeb3d8a4a45b3ebe9aee326f7c7
+CCTV-14,P2p://generationnexxxt.com:19806/0170decf55974c7ca5439f8ae263aab4
+CCTV-15,P2p://generationnexxxt.com:19806/7e9868749080472c8e75bbec62dc630f
+CCTV-16,P2p://generationnexxxt.com:19806/3bb4c4f6ec8d45db81ede1415820dba0
+CCTV-17,P2p://generationnexxxt.com:19806/d155cd0903944373a0c13e8164532313
+CCTV-1,P2p://generationnexxxt.com:19806/01803b4a49244bbeb8ae6a184892e94c
 
 卫视,#genre#
 北京卫视,P2p://generationnexxxt.com:19806/d2ea1b4a7c74410b8de4136e30ae7b2d
@@ -64,10 +64,10 @@ CHC动作电影(B),P2p://generationnexxxt.com:19806/3dd6b903d6c84def8c6d24db5515
 
 
 香港,#genre#
-有线新闻台,p3p://173.208.176.178:19806/655bd22c000147307fdff68936807320
+有线新闻台,p3p://173.208.176.178:19806/655bd22c000147307fdff68936807320#mitv://generationnexxxt.com:19806/86a69c6de155405ba916819e2634aa74
 无线新闻台,p3p://173.208.176.178:19806/653e4818000b73240c7d19181340415e#mitv://147.135.39.171:9906/665fe3b70003d98a2157b5c1769244d0
-now新闻台,p3p://173.208.176.178:19806/653e4f3d0003bdbf0c98ffaf583a6e3a
-无线翡翠台,p3p://173.208.176.178:19806/653e4c02000ea0440c8c63fd3e5d709d#mitv://147.135.39.171:9906/66430d4f000a06ccb0b20a650b4b5d65
+now新闻台,p3p://173.208.176.178:19806/653e4f3d0003bdbf0c98ffaf583a6e3a#mitv://135.148.104.228:19806/86a69c6de155405ba916819e2634aa74
+无线翡翠台,p3p://173.208.176.178:19806/653e4c02000ea0440c8c63fd3e5d709d#mitv://147.135.39.171:9906/66430d4f000a06ccb0b20a650b4b5d65#http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
 无线华丽台,mitv://generationnexxxt.com:19806/1444d681fb1b44d4a20ff001c2bb2f7c
 无线Plus台,p3p://173.208.176.178:19806/6649bce20008d56453eeebfc022701f1
 无线Plus台,p3p://173.208.176.178:19806/653e4d3e000b344f0c91357e73163f82
