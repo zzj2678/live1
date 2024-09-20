@@ -1103,7 +1103,7 @@ with open('T2.txt', 'r', encoding="utf-8") as input_file, open('TT2.txt', 'a', e
 #star#########################
 #enter#############################################################################################
 
-keywords = ['hk']  #enter
+keywords = ['hk.txt']  #enter
 
 pattern = '|'.join(keywords)  #enter
 
