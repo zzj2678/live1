@@ -1187,86 +1187,6 @@ pattern = '|'.join(keywords)  #enter
 
 #pattern = r"^(.*?),(?!#genre#)(.*?)$" #enter
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T10.txt', 'w', encoding='utf-8') as T10:    #####enter
-
-    for line in file:
-
-        if re.search(pattern, line) and line.count(',') == 1:  #enter
-
-         T10.write(line)  #enter
-
-for line in fileinput.input("T10.txt", inplace=True):  #enter 
-
-    print(line, end="")  #enter          
-
-#enter-genre###################
-with open('TT10.txt', 'w', encoding='utf-8') as TT10:    #####enter
-
-    TT10.write('\n👑广东数字高清,#genre#\n')        
- 
-    print(line, end="")  #enter 
-#enter
-
-#enter
-import re
-
-#enter
-def custom_sort_key(item):
-    channel, url = item.split(',')
-
-    channel_letters = ''.join(filter(str.isalpha, channel))
-    channel_numbers = ''.join(filter(str.isdigit, channel))
-
-    if channel_numbers.isdigit():
-        channel_sort_key = (channel_letters, int(channel_numbers))
-    else:
-        channel_sort_key = (channel_letters, 0)
-
-    sort_key = re.search(r"http://(.*?)\.", url)
-    if sort_key:
-        sort_key = sort_key.group(1)
-    else:
-        sort_key = url
-
-    # enter
-    if sort_key[0].isalpha():
-        sort_key = (0, sort_key)  # enter
-    elif sort_key.isdigit():
-        sort_key = (1, -int(sort_key))  #enter
-    else:
-        sort_key = (2, sort_key)
-
-    return (channel_sort_key, sort_key)
-
-with open('T10.txt', 'r', encoding="utf-8") as input_file, open('TT10.txt', 'a', encoding="utf-8") as output_file:
-    #enter
-    lines = input_file.readlines()
-
-    #enter
-    lines = [line.strip() for line in lines if line.strip()]
-    
-    sorted_data = sorted(lines, key=custom_sort_key)
-
-    #enter
-    for channels in sorted_data: 
-        output_file.write(f"{channels}\n")
-    sorted_data = sorted(lines, key=custom_sort_key)
-
-   #结束########################################################
-   
-   
- ##################################################################################################################################SPLIT#
-
-
-#star#########################
-#enter#############################################################################################
-
-keywords = ['重Q']  #enter
-
-pattern = '|'.join(keywords)  #enter
-
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #enter
-
 with open('排序.txt', 'r', encoding='utf-8') as file, open('T5.txt', 'w', encoding='utf-8') as T5:    #####enter
 
     for line in file:
@@ -1282,7 +1202,7 @@ for line in fileinput.input("T5.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT5.txt', 'w', encoding='utf-8') as TT5:    #####enter
 
-    TT5.write('\n👑重庆数字高清,#genre#\n')        
+    TT5.write('\n👑广东数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1319,6 +1239,86 @@ def custom_sort_key(item):
     return (channel_sort_key, sort_key)
 
 with open('T5.txt', 'r', encoding="utf-8") as input_file, open('TT5.txt', 'a', encoding="utf-8") as output_file:
+    #enter
+    lines = input_file.readlines()
+
+    #enter
+    lines = [line.strip() for line in lines if line.strip()]
+    
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+    #enter
+    for channels in sorted_data: 
+        output_file.write(f"{channels}\n")
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+   #结束########################################################
+   
+   
+ ##################################################################################################################################SPLIT#
+
+
+#star#########################
+#enter#############################################################################################
+
+keywords = ['重Q']  #enter
+
+pattern = '|'.join(keywords)  #enter
+
+#pattern = r"^(.*?),(?!#genre#)(.*?)$" #enter
+
+with open('排序.txt', 'r', encoding='utf-8') as file, open('T10.txt', 'w', encoding='utf-8') as T10:    #####enter
+
+    for line in file:
+
+        if re.search(pattern, line) and line.count(',') == 1:  #enter
+
+         T10.write(line)  #enter
+
+for line in fileinput.input("T10.txt", inplace=True):  #enter 
+
+    print(line, end="")  #enter          
+
+#enter-genre###################
+with open('TT10.txt', 'w', encoding='utf-8') as TT10:    #####enter
+
+    TT10.write('\n👑重庆数字高清,#genre#\n')        
+ 
+    print(line, end="")  #enter 
+#enter
+
+#enter
+import re
+
+#enter
+def custom_sort_key(item):
+    channel, url = item.split(',')
+
+    channel_letters = ''.join(filter(str.isalpha, channel))
+    channel_numbers = ''.join(filter(str.isdigit, channel))
+
+    if channel_numbers.isdigit():
+        channel_sort_key = (channel_letters, int(channel_numbers))
+    else:
+        channel_sort_key = (channel_letters, 0)
+
+    sort_key = re.search(r"http://(.*?)\.", url)
+    if sort_key:
+        sort_key = sort_key.group(1)
+    else:
+        sort_key = url
+
+    # enter
+    if sort_key[0].isalpha():
+        sort_key = (0, sort_key)  # enter
+    elif sort_key.isdigit():
+        sort_key = (1, -int(sort_key))  #enter
+    else:
+        sort_key = (2, sort_key)
+
+    return (channel_sort_key, sort_key)
+
+with open('T10.txt', 'r', encoding="utf-8") as input_file, open('TT10.txt', 'a', encoding="utf-8") as output_file:
     #enter
     lines = input_file.readlines()
 
