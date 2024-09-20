@@ -1124,7 +1124,7 @@ for line in fileinput.input("T3.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT3.txt', 'w', encoding='utf-8') as TT3:    #####enter
 
-    TT3.write('\n👑HK,#genre#\n')        
+    TT3.write('\n👑港澳台,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
