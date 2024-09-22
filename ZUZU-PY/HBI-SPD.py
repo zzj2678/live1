@@ -1100,83 +1100,6 @@ with open('T2.txt', 'r', encoding="utf-8") as input_file, open('TT2.txt', 'a', e
 
     ##################################################################################################################################SPLIT#
 
-#star#########################
-#enter#############################################################################################
-
-keywords = ['hk.txt']  #enter
-
-pattern = '|'.join(keywords)  #enter
-
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #enter
-
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T3.txt', 'w', encoding='utf-8') as T15:    #####enter
-
-    for line in file:
-
-        if re.search(pattern, line) and line.count(',') == 1:  #enter
-
-         T15.write(line)  #enter
-
-for line in fileinput.input("T3.txt", inplace=True):  #enter 
-
-    print(line, end="")  #enter          
-
-#enter-genre###################
-with open('TT3.txt', 'w', encoding='utf-8') as TT3:    #####enter
-
-    TT3.write('\n👑港澳台,#genre#\n')        
- 
-    print(line, end="")  #enter 
-#enter
-
-#enter
-import re
-
-#enter
-def custom_sort_key(item):
-    channel, url = item.split(',')
-
-    channel_letters = ''.join(filter(str.isalpha, channel))
-    channel_numbers = ''.join(filter(str.isdigit, channel))
-
-    if channel_numbers.isdigit():
-        channel_sort_key = (channel_letters, int(channel_numbers))
-    else:
-        channel_sort_key = (channel_letters, 0)
-
-    sort_key = re.search(r"http://(.*?)\.", url)
-    if sort_key:
-        sort_key = sort_key.group(1)
-    else:
-        sort_key = url
-
-    # enter
-    if sort_key[0].isalpha():
-        sort_key = (0, sort_key)  # enter
-    elif sort_key.isdigit():
-        sort_key = (1, -int(sort_key))  #enter
-    else:
-        sort_key = (2, sort_key)
-
-    return (channel_sort_key, sort_key)
-
-with open('T3.txt', 'r', encoding="utf-8") as input_file, open('TT3.txt', 'a', encoding="utf-8") as output_file:
-    #enter
-    lines = input_file.readlines()
-
-    #enter
-    lines = [line.strip() for line in lines if line.strip()]
-    
-    sorted_data = sorted(lines, key=custom_sort_key)
-
-    #enter
-    for channels in sorted_data: 
-        output_file.write(f"{channels}\n")
-    sorted_data = sorted(lines, key=custom_sort_key)
-
-   #结束########################################################
-   
-   ##################################################################################################################################SPLIT#
 
 #star#########################
 #enter#############################################################################################
@@ -1202,7 +1125,7 @@ for line in fileinput.input("T5.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT5.txt', 'w', encoding='utf-8') as TT5:    #####enter
 
-    TT5.write('\n👑广东高清,#genre#\n')        
+    TT5.write('\n👑广东数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1282,7 +1205,7 @@ for line in fileinput.input("T10.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT10.txt', 'w', encoding='utf-8') as TT10:    #####enter
 
-    TT10.write('\n👑重庆高清,#genre#\n')        
+    TT10.write('\n👑重庆数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1360,7 +1283,7 @@ for line in fileinput.input("T6.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT6.txt', 'w', encoding='utf-8') as TT6:    #####enter
 
-    TT6.write('\n👑北京高清,#genre#\n')        
+    TT6.write('\n👑北京数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1440,7 +1363,7 @@ for line in fileinput.input("T7.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT7.txt', 'w', encoding='utf-8') as TT7:    #####enter
 
-    TT7.write('\n👑河北高清,#genre#\n')        
+    TT7.write('\n👑河北数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1519,7 +1442,7 @@ for line in fileinput.input("T8.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT8.txt', 'w', encoding='utf-8') as TT8:    #####enter
 
-    TT8.write('\n👑河南高清,#genre#\n')        
+    TT8.write('\n👑河南数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1598,7 +1521,7 @@ for line in fileinput.input("T9.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT9.txt', 'w', encoding='utf-8') as TT9:    #####enter
 
-    TT9.write('\n👑天津高清,#genre#\n')        
+    TT9.write('\n👑天津数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1679,7 +1602,7 @@ for line in fileinput.input("T11.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT11.txt', 'w', encoding='utf-8') as TT11:    #####enter
 
-    TT11.write('\n👑广西高清,#genre#\n')        
+    TT11.write('\n👑广西数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1758,7 +1681,7 @@ for line in fileinput.input("T12.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT12.txt', 'w', encoding='utf-8') as TT12:    #####enter
 
-    TT12.write('\n👑湖北高清,#genre#\n')        
+    TT12.write('\n👑湖北数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1836,7 +1759,7 @@ for line in fileinput.input("T13.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT13.txt', 'w', encoding='utf-8') as TT13:    #####enter
 
-    TT13.write('\n👑山东高清,#genre#\n')        
+    TT13.write('\n👑山东数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1914,7 +1837,7 @@ for line in fileinput.input("T14.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT14.txt', 'w', encoding='utf-8') as TT14:    #####enter
 
-    TT14.write('\n👑安徽高清,#genre#\n')        
+    TT14.write('\n👑安徽数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -1992,7 +1915,7 @@ for line in fileinput.input("T15.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT15.txt', 'w', encoding='utf-8') as TT15:    #####enter
 
-    TT15.write('\n👑江苏高清,#genre#\n')        
+    TT15.write('\n👑江苏数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2070,7 +1993,7 @@ for line in fileinput.input("T16.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT16.txt', 'w', encoding='utf-8') as TT16:    #####enter
 
-    TT16.write('\n👑江西高清,#genre#\n')        
+    TT16.write('\n👑江西数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2148,7 +2071,7 @@ for line in fileinput.input("T17.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT17.txt', 'w', encoding='utf-8') as TT17:    #####enter
 
-    TT17.write('\n👑山西高清,#genre#\n')        
+    TT17.write('\n👑山西数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2226,7 +2149,7 @@ for line in fileinput.input("T18.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT18.txt', 'w', encoding='utf-8') as TT18:    #####enter
 
-    TT18.write('\n👑浙江高清,#genre#\n')        
+    TT18.write('\n👑浙江数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2392,7 +2315,7 @@ for line in fileinput.input("T20.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT20.txt', 'w', encoding='utf-8') as TT20:    #####enter
 
-    TT20.write('\n👑辽宁高清,#genre#\n')        
+    TT20.write('\n👑辽宁数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2470,7 +2393,7 @@ for line in fileinput.input("T21.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT21.txt', 'w', encoding='utf-8') as TT21:    #####enter
 
-    TT21.write('\n👑黑龙江频道,#genre#\n')        
+    TT21.write('\n👑吉林黑龙江频道,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2548,7 +2471,7 @@ for line in fileinput.input("T22.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT22.txt', 'w', encoding='utf-8') as TT22:    #####enter
 
-    TT22.write('\n👑贵州频道,#genre#\n')        
+    TT22.write('\n👑贵州地方频道,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2626,7 +2549,7 @@ for line in fileinput.input("T23.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT23.txt', 'w', encoding='utf-8') as TT23:    #####enter
 
-    TT23.write('\n👑陕西高清,#genre#\n')        
+    TT23.write('\n👑陕西数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2704,7 +2627,7 @@ for line in fileinput.input("T24.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT24.txt', 'w', encoding='utf-8') as TT24:    #####enter
 
-    TT24.write('\n👑新疆高清,#genre#\n')        
+    TT24.write('\n👑新疆数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2782,7 +2705,7 @@ for line in fileinput.input("T25.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT25.txt', 'w', encoding='utf-8') as TT25:    #####enter
 
-    TT25.write('\n👑四川高清,#genre#\n')        
+    TT25.write('\n👑四川数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2859,7 +2782,7 @@ for line in fileinput.input("T26.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT26.txt', 'w', encoding='utf-8') as TT26:    #####enter
 
-    TT26.write('\n👑福建高清,#genre#\n')        
+    TT26.write('\n👑福建数字高清,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
@@ -2934,7 +2857,7 @@ for line in fileinput.input("T27.txt", inplace=True):  #enter
 #enter-genre###################
 with open('TT27.txt', 'w', encoding='utf-8') as TT27:    #####enter
 
-    TT27.write('\n👑宁夏青海,#genre#\n')        
+    TT27.write('\n👑宁夏青海地方,#genre#\n')        
  
     print(line, end="")  #enter 
 #enter
